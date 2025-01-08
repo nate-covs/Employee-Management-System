@@ -2,7 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LENGTH 20
 
 struct employee {               // employee struct
     char firstName[10];
@@ -14,7 +13,7 @@ struct employee {               // employee struct
 
 };
 
-void idGen();               // function to generate random id
+int idGen();               // function to generate random id
 
 void insertRec();           // function to add employee
 
