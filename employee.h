@@ -8,7 +8,7 @@ struct employee {               // employee struct
     char lastName[10];
     int age;
     char address[20];
-    char department[10];
+    char department[15];
     long id;
 
 };
