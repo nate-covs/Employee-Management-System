@@ -5,6 +5,7 @@
 #include <string.h>
 #include <unistd.h>
 #include <fcntl.h>
+#include <math.h>
 
 struct employee e;
 
@@ -19,7 +20,7 @@ int idGen() {
     srand(time(NULL));
     int randomPart = rand();
     time_t now = time(NULL);
-    return (int)(now - randomPart);
+    return abs((int)(now - randomPart));
     
 }
 
@@ -30,7 +31,7 @@ void insertRec() {
     printf("-------------\n");
 
 
-    printf("managment\n");
+    printf("management\n");
     printf("manufacturing\n");
     printf("research\n");
     printf("sales\n");
@@ -115,7 +116,7 @@ void deleteRec() {
     printf("-------------\n");
 
 
-    printf("managment\n");
+    printf("management\n");
     printf("manufacturing\n");
     printf("research\n");
     printf("sales\n");
